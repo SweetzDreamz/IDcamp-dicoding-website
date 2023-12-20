@@ -1,0 +1,367 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: 'Poppins', sans-serif;
+}
+
+main {
+  padding: 20px;
+  background-color: yellow;
+  overflow: auto;
+}
+
+header {
+  max-width: 100%;
+  margin-inline: auto;
+  height: 70px;
+  background-color: black;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+header p {
+  text-align: center;
+  color: white;
+  font-weight: bolder;
+  display: inline-block;
+  padding: 23px 24px;
+  text-transform: uppercase;
+  margin-right: auto;
+}
+
+header ul {
+  margin-right: 100px;
+  float: right;
+}
+
+header ul li {
+  padding-top: 23px;
+  padding-right: 10px;
+  list-style: none;
+  display: inline-block;
+}
+
+header ul li a {
+  margin-right: 50px;
+  text-align: center;
+  color: white;
+  transition: 0.3s;
+}
+
+header ul li a:hover {
+  color: yellow;
+}
+
+a {
+  text-decoration: none;
+}
+
+#home {
+  max-width: 100%;
+  padding: 60px;
+  text-align: center;
+  color: white;
+  font-size: 30px;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)), url(../images/nusaputra-univ.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+}
+
+h1 {
+  margin-top: 150px;
+}
+
+.button {
+  background-color: white;
+  border: none;
+  color: black;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 50px;
+  border-radius: 10px;
+  width: 200px;
+  font-weight: bold;
+  transition-duration: 0.4s;
+}
+
+.button:hover {
+  background-color: gray;
+}
+
+.box1 {
+  font-size: 18px;
+}
+
+.content {
+  float: left;
+  width: 75%;
+}
+
+.card {
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 40px;
+  margin-top: 20px;
+}
+
+span {
+  color: red;
+  font-weight: bold;
+}
+
+form {
+  max-width: 100%;
+  margin: 10px auto;
+}
+
+input[type='text'],
+select {
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  font-size: 16px;
+  height: auto;
+  margin: 0;
+  outline: 0;
+  padding: 15px;
+  width: 100%;
+  background-color: #e8eeef;
+  color: #384853;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
+  margin-bottom: 30px;
+}
+
+input[type='radio'] {
+  margin: 0 5px 8px 0;
+}
+
+select {
+  padding: 6px;
+  height: 32px;
+  border-radius: 2px;
+}
+
+button {
+  padding: 19px 39px 18px 39px;
+  color: #fff;
+  background-color: black;
+  font-size: 18px;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 10px;
+  width: 100%;
+  border-width: 1px 1px 3px;
+  box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.1) inset;
+  margin-bottom: 10px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: grey;
+}
+
+fieldset {
+  border: 0;
+}
+
+aside {
+  float: right;
+  width: 25%;
+  padding-left: 20px;
+  text-align: center;
+}
+
+.logo {
+  max-width: 300px;
+}
+
+#contact {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+footer .foot {
+  background-color: black;
+  color: white;
+  text-align: center;
+  font-size: 18px;
+  padding: 20px;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 1000px) {
+  .content,
+  aside {
+    width: 100%;
+    padding: 0;
+  }
+
+  header ul li a {
+    margin-right: 20px;
+  }
+
+  #home {
+    height: 42vh;
+  }
+
+  h1 {
+    margin-top: 50px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header ul li a {
+    margin-right: 20px;
+    font-size: 12px;
+  }
+
+  #home {
+    height: 60vh;
+  }
+
+  #home p {
+    font-size: 14px;
+  }
+
+  h1 {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  #home {
+    height: 30vh;
+  }
+
+  header nav {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  header p {
+    text-align: center;
+    color: white;
+    font-weight: bolder;
+    display: inline-block;
+    padding: 23px 24px;
+    text-transform: uppercase;
+    margin-right: auto;
+    font-size: 10px;
+    margin-top: 10px;
+  }
+
+  header ul {
+    margin-right: 0;
+    float: right;
+  }
+
+  header ul li {
+    padding-top: 23px;
+    padding-right: 10px;
+    list-style: none;
+    display: inline-block;
+  }
+
+  header ul li a {
+    font-size: 8px;
+  }
+
+  h1 {
+    font-size: 14px;
+    margin-top: 0px;
+  }
+
+  .button {
+    margin-top: 10px;
+    background-color: white;
+    border: none;
+    color: black;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 10px;
+    border-radius: 10px;
+    width: 100px;
+    font-weight: bold;
+    transition-duration: 0.4s;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  #home {
+    height: 25vh;
+    padding: 30px;
+  }
+
+  #home p {
+    font-size: 10px;
+  }
+
+  h1 {
+    font-size: 14px;
+    margin-top: 10px;
+  }
+
+  .button {
+    margin-top: 10px;
+    background-color: white;
+    border: none;
+    color: black;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    border-radius: 10px;
+    width: 100px;
+    font-weight: bold;
+    transition-duration: 0.4s;
+  }
+
+  header {
+    height: 40px;
+    background-color: black;
+  }
+
+  header p {
+    font-size: 8px;
+    margin-top: 10px;
+    padding: 5px 0 0 10px;
+  }
+
+  header ul {
+    margin-right: 5px;
+    float: right;
+  }
+
+  header ul li {
+    padding: 5px;
+  }
+
+  header ul li a {
+    font-size: 8px;
+    margin-right: 10px;
+  }
+
+  #rules.card {
+    font-size: 12px;
+  }
+
+  footer .foot {
+    font-size: 12px;
+  }
+}
